@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="exampleus">
+    <AppName>Cool</AppName>
+    <Example>Get me a bear</Example>
+
+    <Command Name="LetsRock">
+      <Example>Play something nice</Example>
+      <ListenFor>{UserCommand}</ListenFor>
+      <Feedback>Getting it...</Feedback>
+      <Navigate Target="MainPage"/>
+    </Command>
+
+    <PhraseTopic Label="UserCommand" Scenario="Natural language"></PhraseTopic>
+  </CommandSet>
+  
+  <CommandSet xml:lang="en-in" Name="examplein">
+    <AppName>Cool</AppName>
+    <Example>Get me a bear</Example>
+
+    <Command Name="LetsRock">
+      <Example>Play something nice</Example>
+      <ListenFor>{UserCommand}</ListenFor>
+      <Feedback>Getting it...</Feedback>
+      <Navigate Target="MainPage"/>
+    </Command>
+
+    <PhraseTopic Label="UserCommand" Scenario="Natural language"></PhraseTopic>
+  </CommandSet>
+</VoiceCommands>
